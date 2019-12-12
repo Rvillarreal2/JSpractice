@@ -1,0 +1,71 @@
+<div>
+    <form method="POST" enctype="application/x-www-form-urlencoded" action="/parking">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label>First Name</label>
+            <input type="text" name="first" required><br> <!--value = "<(%)= booking.first(%)>" -->
+            <label>Last Name</label>
+            <input type="text" name="last" required><br>
+            <label>Phone</label>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><small>Format: 111-222-3333</small><br>
+            <label>Email</label>
+            <input type="email" name="email" required><br>
+        </fieldset><br><br> 
+
+        <fieldset>
+            <legend>Pricing (Charged Daily)</legend>
+            <label>VIP Indoor Parking: $40</label>
+            <input type="radio" name="parking" required value="vipParking">
+            <label>Regular Outdoor Parking: $25</label>
+            <input type="radio" name="parking" required value="regParking">
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>When should we expect you?</legend>
+            <Label>Pickup Time:</Label>
+            <input type="date" name="dropoff" required>
+            <Label>Dropoff Time:</Label>
+            <input type="date" name="pickup" required>
+        </fieldset><br>
+
+        <button><input type="submit" value="Submit Booking"></button>
+
+    </form>
+</div>
+
+<!-- <div class="menu-container">
+    <div class="button-container">
+        <div class="action-container">
+             <a href="#/Action1" class="button">Action1</a>
+        </div>
+        <div class="action-container">
+             <a href="#/Action1" class="button">Action2</a>
+        </div>
+        <div class="action-container">
+             <a href="#/Action1" class="button">Action3</a>
+        </div>
+        <div class="action-container">
+             <a href="#/Action1" class="button">Action4</a>
+        </div>
+        <div class="action-container">
+             <a href="#/Action1" class="button">Action5</a>
+        </div>
+    </div>
+</div> -->
+
+<!-- .menu-container{
+    width:250px;
+    border: 1px solid #000;
+    padding-top: 10px;
+}
+.button{
+    width:110px;
+    border:1px solid #900;
+    margin-left: 5px;
+    line-height:20px;
+}
+.action-container{
+    display:inline-block;
+    margin-bottom: 5px;
+}
+} -->
