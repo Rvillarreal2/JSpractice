@@ -1,5 +1,78 @@
 <body>
-    <section class="container content-section">
-        
-    </section>
+        <section class="wrapper">
+          <div class="shelby">
+            <img src="/imgs/shelby.png" />
+          </div>
+    
+          <div class="about-us about">
+            <h2>About Us!</h2>
+            <p>
+              Curabitizzle izzle the bizzle get down get down nisi aliquam
+              mollizzle. Suspendisse ghetto. Morbi i'm in the shizzle. Vivamus
+              neque. Crackalackin away. Crizzle maurizzle sizzle, check it out a,
+              feugizzle sizzle amizzle, shiznit izzle, pede. Things gravida.
+              Vestibulum pimpin' mi, mammasay mammasa mamma oo sa get down get down,
+              shit sed, adipiscing semper, dang. I saw beyonces tizzles and my
+              pizzle went crizzle in ipsum. Sizzle shizznit felizzle vizzle for
+              sure. Cras for sure justo in purizzle sodalizzle ornare. Get down get
+              down venenatis justo izzle . Nunc urna. Suspendisse ma nizzle placerat
+              lacus. Curabitur crazy daahng dawg. Mofo break yo neck, yall, leo eu
+              check it out hendrerizzle, things felis elementizzle sem, yo mamma
+              aliquet my shizz felizzle gangsta nizzle. Nam a nisl. Class fizzle
+              phat ad litora torquent da bomb daahng dawg bling bling, pizzle
+              inceptos fo shizzle. Pot interdizzle, rizzle nec ass nonummy, boofron
+              black dizzle leo, da bomb sempizzle risizzle arcu sizzle.
+            </p>
+    
+            <button class="accordion">Why Us</button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+    
+            <button class="accordion">Live on the Edge</button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+    
+            <button class="accordion">Our Partners</button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </section>
+    
+        <script>
+    
+          let accordion = () => {
+            let acc = document.getElementsByClassName("accordion");
+    
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              let panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        }  
+        accordion();
+    </script>
 </body>

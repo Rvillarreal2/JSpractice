@@ -229,3 +229,50 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+@keyframes movecar { 
+
+    0%     { left: 0px; }
+
+    100%    { left: 43%; }
+
+}
+
+
+.shelby img {
+    position: relative;
+    animation: movecar 3s linear normal; 
+    animation-fill-mode: forwards;
+    /* animation-duration: 3s; */
+}
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+
+}
+
+
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+
+}
+
+
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+
+}
